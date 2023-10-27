@@ -1,0 +1,90 @@
+h1 {
+    color: rgba(173, 164, 164, 0.466);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2.5px solid rgba(93, 90, 121, 0.425);
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-img {
+    margin-top: 70px;
+    background: rgb(173, 185, 224);
+    border-radius: 999px;
+    border: 3.5px solid rgb(54, 50, 83);
+    width: 192px;
+    height: 192px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.noti {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background-color: rgb(16, 42, 63);
+    width: 3rem;
+    border-radius: 999px;
+    height: 3rem;
+    right: 0;
+    bottom: 0;
+    font-size: xx-large;
+    color: rgb(182, 239, 241);
+    font-weight: 500;
+}
+
+.input-group {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+.gallery {
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 25px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+}
+
+.gallery-item {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.col-span {
+    grid-column: span 2 / span 2;
+}
+
+.row-span {
+    grid-row: span 2 / span 2;
+}
+
+.on-hover {
+    text-decoration: none;
+    color: black;
+}
+
+.on-hover:hover {
+    text-decoration: underline;
+    color: blue;
+}
